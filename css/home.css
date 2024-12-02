@@ -29,6 +29,7 @@
 }
 
 body{
+    animation: fadeInAnimation ease 1s;
     background-image: linear-gradient(to bottom right, yellow, red);
     text-align: center;
     height: 100%;

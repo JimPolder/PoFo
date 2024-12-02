@@ -1,0 +1,84 @@
+:root{
+    background-color: black;
+    color: red;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hoverFade {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+body{
+    animation: fadeInAnimation ease 1s;
+    text-align: center;
+}
+
+.navBar{
+    padding-left: 29%;
+}
+
+.navBar ul{
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 824px;
+    background-color:rgb(255, 0, 0);
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.navBar li{
+    float: left;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.navBar a{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 1.5px;
+    padding-top: 1.5px;
+    border: 1px solid black;
+    border-radius: 20%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    display: block;
+    background-color: black;
+ 
+}
+
+.Portofolio{
+    background-color: darkred;
+}
+
+.navBar li:hover{
+    background-color: brown;
+    animation: hoverFade ease 1s;
+}

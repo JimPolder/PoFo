@@ -74,6 +74,10 @@ body{
  
 }
 
+.Home{
+    background-color: darkred;
+}
+
 .navBar li:hover{
     background-color: brown;
     animation: hoverFade ease 1s;

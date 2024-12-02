@@ -1,5 +1,4 @@
 :root{
-    background-color: black;
     color: red;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -30,8 +29,11 @@
 }
 
 body{
-    animation: fadeInAnimation ease 1s;
+    background-image: linear-gradient(to bottom right, yellow, red);
     text-align: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navBar{

@@ -1,0 +1,54 @@
+:root{
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgb(179, 179, 179);
+}
+
+body{
+    display: grid;
+    gap: 1px;
+}
+
+header{
+    animation: fadeInAnimation ease 3s;
+    text-align: center;
+    top: 10%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pullDownAnimation{
+    0% {
+        transform: translateY(-120%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+}
+
+@keyframes pullSideAnimation{
+    0% {
+        transform: translateX(-10%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+}
+
+.titleDiv{
+    background-color: gray;
+    animation: pullDownAnimation ease 3s;
+}
+
+main{
+    background-color: red;
+    animation: pullSideAnimation ease 5s;
+}

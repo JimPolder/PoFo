@@ -12,7 +12,7 @@ body{
 header{
     animation: fadeInAnimation ease 3s;
     text-align: center;
-    top: 10%;
+    transform: translateY(0%);
 }
 
 @keyframes fadeInAnimation {
@@ -30,7 +30,7 @@ header{
         transform: translateY(-120%);
     }
     100%{
-        transform: translateY(10%);
+        transform: translateY(0%);
     }
 }
 
